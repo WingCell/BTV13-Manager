@@ -2,7 +2,7 @@
 
 Este guia configura uma TV Box Android para uma pessoa idosa: poucos ícones, canais gratuitos em uma lista no VLC e vídeos em um cliente para controle remoto. Foi testado em um BTV 13 com Android 11 e processador ARM de 32 bits. Outros aparelhos podem ter menus, pacotes e portas ADB diferentes.
 
-**O que este projeto inclui:** uma lista M3U com canais públicos e temáticos gratuitos selecionados. Ela não contém Discovery Channel, Premiere nem promete jogos específicos. URLs de TV podem mudar; o teste automático confirma apenas se a playlist HLS responde naquele momento. Faça a conferência de imagem e som na sua TV depois de instalar.
+**O que este projeto inclui:** uma lista M3U com 25 canais públicos e temáticos gratuitos selecionados, incluindo novelas, filmes, esporte e documentários. Ela não contém Discovery Channel, Premiere nem promete jogos específicos. URLs de TV podem mudar; o teste automático confirma apenas se a playlist HLS responde naquele momento. Faça a conferência de imagem e som na sua TV depois de instalar.
 
 ## 1. Preparar o computador
 
@@ -71,11 +71,11 @@ adb shell pm revoke app.smarttube.fdroid android.permission.RECORD_AUDIO
 Use o arquivo `config/canais-da-vo.m3u` deste projeto. Ele coloca os canais abertos e de notícias primeiro, seguidos de novelas, esportes, filmes e documentários gratuitos. Para copiar:
 
 ```text
-adb push config/canais-da-vo.m3u /sdcard/Download/canais-da-vo.m3u
-adb shell am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d file:///sdcard/Download/canais-da-vo.m3u
+adb push config/canais-da-vo.m3u "/sdcard/Download/TV AO VIVO.m3u"
+adb shell am broadcast -a android.intent.action.MEDIA_SCANNER_SCAN_FILE -d "file:///sdcard/Download/TV%20AO%20VIVO.m3u"
 ```
 
-No BTV, abra **VLC > Listas de Reprodução > canais-da-vo.m3u**. Use setas, **OK** e **Voltar**. Se a lista não aparecer, abra a pasta **memória interna > Download** no VLC e selecione o arquivo.
+No BTV, abra **VLC > Listas de Reprodução > TV AO VIVO.m3u**. Use setas, **OK** e **Voltar**. Se a lista não aparecer, abra a pasta **memória interna > Download** no VLC e selecione o arquivo. Os canais abertos e de notícias vêm primeiro; novelas, filmes e documentários estão logo depois. A opção **Adicionar um novo servidor** do VLC serve para arquivos em rede (por exemplo, FTP), não para importar canais IPTV.
 
 O script `scripts/check-playlist.ps1` testa os URLs em lote no computador. Ele confere HTTP, formato HLS e se os atalhos da Pluto TV chegam ao domínio `pluto.tv`; gera `reports/playlist-check.json`. No PowerShell:
 
@@ -107,4 +107,3 @@ Para transferir arquivos sem computador, o [LocalSend](https://localsend.org/) f
 - Guarde pelo menos alguns gigabytes livres. Evite dezenas de apps que iniciam junto com a TV.
 - Não faça root, restauração de fábrica ou remova pacotes do sistema para tentar acelerar o aparelho.
 - Para futebol, consulte as transmissões gratuitas anunciadas pelos detentores de direitos. O canal Esportes da Pluto não equivale ao Premiere.
-
