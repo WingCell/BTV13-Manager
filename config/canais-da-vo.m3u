@@ -1,6 +1,10 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="SBTInterior.br" group-title="TV aberta",SBT Interior
 https://cdn.live.br1.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?btv13=SBTInterior
+#EXTINF:-1 tvg-id="RecordAmplitudeJuara.br" group-title="TV aberta",Record (afiliada MT)
+https://cdn.live.br1.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/playlist.m3u8
+#EXTINF:-1 tvg-id="RBATV.br" group-title="TV aberta",Band (afiliada PA)
+https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8
 #EXTINF:-1 tvg-id="TVCultura.br" group-title="TV aberta",TV Cultura
 https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8?btv13=TVCultura
 #EXTINF:-1 tvg-id="CulturaFast.br" group-title="TV aberta",Cultura Fast
