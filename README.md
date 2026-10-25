@@ -2,7 +2,7 @@
 
 Este guia configura uma TV Box Android para uma pessoa idosa: poucos ícones, canais gratuitos em um guia no OpenTV, VLC como reserva e vídeos em um cliente para controle remoto. Foi testado em um BTV 13 com Android 11 e processador ARM de 32 bits. Outros aparelhos podem ter menus, pacotes e portas ADB diferentes.
 
-**O que este projeto inclui:** uma lista M3U com 25 canais públicos e temáticos gratuitos selecionados, incluindo novelas, filmes, esporte e documentários. Ela não contém Discovery Channel, Premiere nem promete jogos específicos. URLs de TV podem mudar; o teste automático confirma apenas se a playlist HLS responde naquele momento. Faça a conferência de imagem e som na sua TV depois de instalar.
+**O que este projeto inclui:** uma lista M3U com 25 canais públicos e temáticos gratuitos selecionados, incluindo novelas, filmes, esporte e documentários. Ela **não contém TV Globo, Record principal, Discovery Channel nem Premiere**, e não promete jogos específicos. Record News e os canais de documentários gratuitos não são esses canais pagos. URLs de TV podem mudar; o teste automático confirma apenas se a playlist HLS responde naquele momento. Faça a conferência de imagem e som na sua TV depois de instalar.
 
 ## 1. Preparar o computador
 
@@ -88,6 +88,8 @@ Esse teste não garante imagem ou áudio no BTV. Faça o teste visual quando for
 ### Opção de guia de canais: OpenTV
 
 O [OpenTV](https://github.com/opentvproject/opentv) é um player gratuito de código aberto com categorias, favoritos e navegação pelo controle. Ele **não inclui canais próprios**. No BTV 13 testado, a versão 0.11.7 importou os 25 canais desta lista e os organizou por categoria. O usuário confirmou que o guia aparece e que SBT Interior tem imagem e áudio no player interno. O VLC permanece como alternativa.
+
+Em três aberturas a frio alternadas neste BTV, a mediana do OpenTV foi **544 ms e 39.964 KiB PSS**, contra **977 ms e 94.243 KiB PSS** do VLC, medidos cerca de 0,5 s após abrir cada app. A medição não cobre o tempo para carregar todo o guia ou iniciar o vídeo.
 
 No Windows, com um único BTV autorizado no ADB, execute na raiz deste projeto:
 
