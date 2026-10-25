@@ -2,7 +2,7 @@
 
 Este guia configura uma TV Box Android para uma pessoa idosa: poucos ícones, canais gratuitos em um guia no OpenTV, VLC como reserva e vídeos em um cliente para controle remoto. Foi testado em um BTV 13 com Android 11 e processador ARM de 32 bits. Outros aparelhos podem ter menus, pacotes e portas ADB diferentes.
 
-**O que este projeto inclui:** uma lista M3U com 25 canais públicos e temáticos gratuitos selecionados, incluindo novelas, filmes, esporte e documentários. Ela **não contém TV Globo, Record principal, Discovery Channel nem Premiere**, e não promete jogos específicos. Record News e os canais de documentários gratuitos não são esses canais pagos. URLs de TV podem mudar; o teste automático confirma apenas se a playlist HLS responde naquele momento. Faça a conferência de imagem e som na sua TV depois de instalar.
+**O que este projeto inclui:** uma lista M3U com 27 canais públicos e temáticos gratuitos selecionados, incluindo novelas, filmes, esporte e documentários. Ela **não contém TV Globo, Record principal, Discovery Channel nem Premiere**, e não promete jogos específicos. Record News e os canais de documentários gratuitos não são esses canais pagos. URLs de TV podem mudar; o teste automático confirma apenas se a playlist HLS responde naquele momento. Faça a conferência de imagem e som na sua TV depois de instalar.
 
 ## 1. Preparar o computador
 
@@ -87,7 +87,7 @@ Esse teste não garante imagem ou áudio no BTV. Faça o teste visual quando for
 
 ### Opção de guia de canais: OpenTV
 
-O [OpenTV](https://github.com/opentvproject/opentv) é um player gratuito de código aberto com categorias, favoritos e navegação pelo controle. Ele **não inclui canais próprios**. No BTV 13 testado, a versão 0.11.7 importou os 25 canais desta lista e os organizou por categoria. O usuário confirmou que o guia aparece e que SBT Interior tem imagem e áudio no player interno. O VLC permanece como alternativa.
+O [OpenTV](https://github.com/opentvproject/opentv) é um player gratuito de código aberto com categorias, favoritos e navegação pelo controle. Ele **não inclui canais próprios**. No BTV 13 testado, a versão 0.11.7 importou esta lista e organizou os canais por categoria. O usuário confirmou que o guia aparece e que SBT Interior tem imagem e áudio no player interno. O VLC permanece como alternativa.
 
 Em três aberturas a frio alternadas neste BTV, a mediana do OpenTV foi **544 ms e 39.964 KiB PSS**, contra **977 ms e 94.243 KiB PSS** do VLC, medidos cerca de 0,5 s após abrir cada app. A medição não cobre o tempo para carregar todo o guia ou iniciar o vídeo.
 
@@ -107,6 +107,8 @@ URL: https://raw.githubusercontent.com/WingCell/BTV13-Manager/main/config/canais
 Selecione **Guardar e carregar**. A lista pública é buscada diretamente pelo BTV; o computador não precisa ficar ligado. O guia de programação pode aparecer vazio porque esta lista não traz EPG. Verifique imagem e áudio no seu aparelho. Não informe credenciais de serviços a páginas ou APKs que você não reconheça.
 
 **Ao procurar outras listas:** estar no GitHub não comprova autorização dos sinais. Em 24/10/2026, a branch padrão de [Ramys/Iptv-Brasil-2026](https://github.com/Ramys/Iptv-Brasil-2026) não tinha o arquivo `CanaisBR06`; outra lista do projeto incluía canais pagos e conteúdo adulto. [IPTV-Brazuka](https://github.com/xKzin/IPTV-Brazuka) reunia canais pagos em endereços de terceiros com credenciais expostas. Não importe essas listas inteiras para uma TV usada por crianças ou idosos, nem instale APKs de players oferecidos por sites de arquivos. O [EPG brazil1.xml](https://github.com/globetvapp/epg/blob/main/Brazil/brazil1.xml) citado em fóruns ainda continha programação de dezembro de 2025 na consulta de outubro de 2026. Confira sempre a data da grade antes de adicioná-la.
+
+Em 25/10/2026, examinamos também o [gist CANAISJOABE](https://gist.github.com/sempreconceito/267043c96ac39ed5b1b9f3680b91974a), cuja última revisão do arquivo é de abril de 2017. Das 443 entradas, 23 marcadas como adultas foram excluídas; somente seis entradas não adultas responderam com HLS no teste em lote. A lista atual ganhou **TV Paraná Turismo**, **TVE RS** e **TV Terceiro Anjo** após teste de manifesto e segmento de vídeo. TV Brasil já existia, E-Paraná repetia TV Paraná, e o canal musical estrangeiro não entrou na seleção brasileira. **TV Câmara** ficou fora da lista ativa porque o sinal oficial não resolveu no teste; restaure-o do histórico quando voltar. TV Paraná é o único sinal HTTP permitido no verificador; os demais usam HTTPS. A validação da lista final terminou com **27/27** respostas HLS, mas a disponibilidade pode mudar.
 
 ## 6. Simplificar a tela inicial
 
