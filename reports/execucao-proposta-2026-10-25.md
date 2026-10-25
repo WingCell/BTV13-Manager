@@ -16,6 +16,8 @@ O domínio `cdn.live.br1.jmvstream.com` usado por alguns canais existentes é di
 
 **Nova proposta de filtrar iptv-org Brasil:** baixei `https://iptv-org.github.io/iptv/countries/br.m3u` em 25/10/2026 (HTTP 200, 398 entradas) e reproduzi o filtro por nomes sugerido. Ele selecionou **23 entradas**, não dez. Não houve correspondência para os nomes exatos “TV Globo SP”, “Discovery Channel”, “Premiere Clubes” e “Canção Nova”. A lista continha Discovery Kids e Discovery World marcados como geobloqueados, que não são Discovery Channel; não havia qualquer entrada com “Premiere”. “Record” selecionou onze variantes, inclusive Record News e afiliadas. Não importei o resultado. O projeto iptv-org se descreve como coleção de links públicos enviados por usuários, cuja autorização é presumida pelos mantenedores, não verificada individualmente para cada sinal.
 
+**Novo URL `globo.globo.com`:** o endereço `https://globo.globo.com/servlets/playlist.m3u8?channel=TV_GLOBO_SP` falhou em DNS no computador e no BTV. Consultas diretas a `1.1.1.1` e `8.8.8.8` retornaram apenas a indicação negativa da zona `globo.com`, sem IP para o subdomínio. Assim, não houve resposta HLS nem justificativa para adicioná-lo ao OpenTV. A Globo informa que TV Globo ao vivo pode ser acessada gratuitamente pelo Globoplay onde disponível, mediante Conta Globo; essa opção não valida o URL M3U apresentado. Os links de Discovery e Premiere repetiram o domínio `cdn.jmvstream.com.br`, já sem resolução DNS, e não há IP a usar diretamente.
+
 ## Stremio no OpenTV 0.11.7
 
 - Verifiquei na interface que a aba **Definições > Add-ons (Stremio)** aceita URLs de manifesto.
