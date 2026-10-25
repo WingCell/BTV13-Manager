@@ -7,6 +7,12 @@ https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8?btv13=TVCultura
 https://fpa-gateway.tvcultura.com.br:8181/memfs/606caef0-a290-413d-9f1f-8fcdb3a73831.m3u8
 #EXTINF:-1 tvg-id="TVBrasil.br" group-title="TV aberta",TV Brasil
 https://tvbrasil-stream.ebc.com.br/index.m3u8
+#EXTINF:-1 tvg-id="TVParanaTurismo.br" group-title="TV aberta",TV Paraná
+http://200.189.113.201/hls/tve.m3u8
+#EXTINF:-1 tvg-id="TVERS.br" group-title="TV aberta",TVE RS
+https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8
+#EXTINF:-1 tvg-id="TVTerceiroAnjo.br" group-title="Religião",TV Terceiro Anjo
+https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8
 #EXTINF:-1 tvg-id="SBTNews.br" group-title="Noticias",SBT News
 https://dai.google.com/linear/hls/event/1XSOdtQ0SH2G8OEmEfGgjQ/master.m3u8
 #EXTINF:-1 tvg-id="VEJAPlusTV.br" group-title="Noticias",VEJA+ TV
@@ -47,5 +53,3 @@ https://jmp2.uk/plu-61099df8cee03b00074b2ecf.m3u8
 https://jmp2.uk/plu-5f32cf37c9ff2b00082adbc8.m3u8
 #EXTINF:-1 tvg-id="NickelodeonClassico.us@BR" group-title="Infantil",Nickelodeon Clássico (Pluto TV)
 https://jmp2.uk/plu-6824ce10c5d53e1351ceb8d1.m3u8
-#EXTINF:-1 tvg-id="TVCamara.br" group-title="Públicos",TV Câmara
-https://stream3.camara.gov.br/tv1/manifest.m3u8
