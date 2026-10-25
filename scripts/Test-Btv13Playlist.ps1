@@ -30,7 +30,10 @@ if ($OutputCsv) {
     $results | Export-Csv -LiteralPath $OutputCsv -NoTypeInformation -Encoding UTF8
 }
 $results | Format-Table -AutoSize -Property Status, ContentType, HlsHeader, Error, Url
-$valid = @($results | Where-Object { $_.Status -eq 200 -and $_.HlsHeader })
+$valid = @($results | Where-Object {
+    $_.Status -eq 200 -and $_.HlsHeader -and
+    $_.ContentType -match '^application/(vnd\.apple\.mpegurl|x-mpegurl)(;|$)'
+})
 Write-Host "Manifestos HLS validos: $($valid.Count)/$(@($results).Count)"
 if ($valid.Count -ne @($results).Count) { exit 1 }
 
