@@ -1,0 +1,12 @@
+"Url","Status","ContentType","HlsHeader","Error"
+"https://cdn.live.br1.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?btv13=SBTInterior","200","application/vnd.apple.mpegurl","True",""
+"https://cdn.live.br1.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/playlist.m3u8","200","application/vnd.apple.mpegurl","True",""
+"https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8","200","application/vnd.apple.mpegurl","True",""
+"https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8?btv13=TVCultura","200","application/vnd.apple.mpegurl","True",""
+"https://tvbrasil-stream.ebc.com.br/index.m3u8","200","application/x-mpegURL","True",""
+"https://dai.google.com/linear/hls/event/1XSOdtQ0SH2G8OEmEfGgjQ/master.m3u8","200","application/x-mpegURL; charset=UTF-8","True",""
+"https://jmp2.uk/plu-6102e04e9ab1db0007a980a1.m3u8","200","application/x-mpegURL","True",""
+"https://jmp2.uk/plu-5f512365abe1f50007d3ff56.m3u8","200","application/x-mpegurl; charset=utf-8","True",""
+"https://jmp2.uk/plu-5f32d2db0af67400077f29c4.m3u8","200","application/x-mpegURL","True",""
+"https://jmp2.uk/plu-6298bd10d88ef000073f16b7.m3u8","200","application/x-mpegurl; charset=utf-8","True",""
+
