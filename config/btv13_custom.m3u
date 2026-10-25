@@ -1,0 +1,21 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="SBTInterior.br" group-title="TV aberta",SBT Interior
+https://cdn.live.br1.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?btv13=SBTInterior
+#EXTINF:-1 tvg-id="RecordAmplitudeJuara.br" group-title="TV aberta",Record (afiliada MT)
+https://cdn.live.br1.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/playlist.m3u8
+#EXTINF:-1 tvg-id="RBATV.br" group-title="TV aberta",Band (afiliada PA)
+https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8
+#EXTINF:-1 tvg-id="TVCultura.br" group-title="TV aberta",TV Cultura
+https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8?btv13=TVCultura
+#EXTINF:-1 tvg-id="TVBrasil.br" group-title="TV aberta",TV Brasil
+https://tvbrasil-stream.ebc.com.br/index.m3u8
+#EXTINF:-1 tvg-id="SBTNews.br" group-title="Notícias",SBT News
+https://dai.google.com/linear/hls/event/1XSOdtQ0SH2G8OEmEfGgjQ/master.m3u8
+#EXTINF:-1 tvg-id="PlutoTVRecordNews.us@BR" group-title="Notícias",Record News (Pluto TV)
+https://jmp2.uk/plu-6102e04e9ab1db0007a980a1.m3u8
+#EXTINF:-1 tvg-id="PlutoTVNovelasBR.br" group-title="Novelas",Novelas (Pluto TV)
+https://jmp2.uk/plu-5f512365abe1f50007d3ff56.m3u8
+#EXTINF:-1 tvg-id="PlutoTVEsportes.br" group-title="Esportes",Esportes (Pluto TV)
+https://jmp2.uk/plu-5f32d2db0af67400077f29c4.m3u8
+#EXTINF:-1 tvg-id="SmithsonianChannelPlutoTV.br" group-title="Documentários",Smithsonian Channel (Pluto TV)
+https://jmp2.uk/plu-6298bd10d88ef000073f16b7.m3u8
