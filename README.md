@@ -114,6 +114,14 @@ Abra o Projectivy e deixe **OpenTV em primeiro, VLC em segundo e SmartTube em te
 
 Para ícones maiores e um fundo simples, abra **Projectivy > Configurações > Aparência > Cartões > Tamanho dos cartões** e aumente dois passos. Escolha um fundo preto e estático. No BTV testado, esses ajustes já foram feitos; para voltar ao tamanho anterior, reduza dois passos no mesmo menu.
 
+### Abrir o Projectivy ao ligar o BTV
+
+No BTV 13 testado, definir o Projectivy como aplicativo de Início e escolher **Configurações > Energia > Iniciar automaticamente após ligar > Projectivy Launcher** ainda fez a tela BTV original aparecer no primeiro reinício. O firmware abriu a tela original diretamente. A tecla **Início** já abria o Projectivy.
+
+Para a tela simples aparecer sozinha, ative **Projectivy > Configurações > Geral > Sobrepor o launcher atual**. Depois abra **Projectivy > Configurações > Serviço de acessibilidade > Exibir configurações de acessibilidade** e ligue **Usar Projectivy Launcher** no Android. O Android avisa que esse serviço pode ler o conteúdo da tela e interagir com aplicativos. Decida se essa permissão é aceitável para a sua TV. No nosso BTV, após um novo reinício, o usuário confirmou que o Projectivy apareceu automaticamente; o ADB confirmou a tela em primeiro plano. Esse resultado foi observado em um reinício.
+
+Para reverter, desligue **Sobrepor o launcher atual** e **Usar Projectivy Launcher** em Acessibilidade. Se desejar, mude **Iniciar automaticamente após ligar** para **Nenhum**. O launcher BTV original continua instalado e habilitado. Sem Acessibilidade, a tecla **Início** ainda pode abrir o Projectivy se ele continuar como HOME padrão.
+
 Não remova o launcher original, serviços de controle remoto nem apps do sistema. Anote antes a atividade HOME original. Para voltar, selecione o launcher original nas configurações de apps padrão ou use, com o nome que você registrou:
 
 ```text
