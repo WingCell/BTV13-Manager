@@ -1,6 +1,6 @@
 # BTV 13 simples: TV ao vivo e vídeos em uma tela
 
-Este guia configura uma TV Box Android para uma pessoa idosa: poucos ícones, canais gratuitos em uma lista no VLC e vídeos em um cliente para controle remoto. Foi testado em um BTV 13 com Android 11 e processador ARM de 32 bits. Outros aparelhos podem ter menus, pacotes e portas ADB diferentes.
+Este guia configura uma TV Box Android para uma pessoa idosa: poucos ícones, canais gratuitos em um guia no OpenTV, VLC como reserva e vídeos em um cliente para controle remoto. Foi testado em um BTV 13 com Android 11 e processador ARM de 32 bits. Outros aparelhos podem ter menus, pacotes e portas ADB diferentes.
 
 **O que este projeto inclui:** uma lista M3U com 25 canais públicos e temáticos gratuitos selecionados, incluindo novelas, filmes, esporte e documentários. Ela não contém Discovery Channel, Premiere nem promete jogos específicos. URLs de TV podem mudar; o teste automático confirma apenas se a playlist HLS responde naquele momento. Faça a conferência de imagem e som na sua TV depois de instalar.
 
@@ -87,7 +87,7 @@ Esse teste não garante imagem ou áudio no BTV. Faça o teste visual quando for
 
 ### Opção de guia de canais: OpenTV
 
-O [OpenTV](https://github.com/opentvproject/opentv) é um player gratuito de código aberto com categorias, favoritos e navegação pelo controle. Ele **não inclui canais próprios**. No BTV 13 testado, a versão 0.11.7 importou os 25 canais desta lista e os organizou por categoria; a confirmação visual de imagem e som no player interno ainda está pendente. O VLC permanece como alternativa.
+O [OpenTV](https://github.com/opentvproject/opentv) é um player gratuito de código aberto com categorias, favoritos e navegação pelo controle. Ele **não inclui canais próprios**. No BTV 13 testado, a versão 0.11.7 importou os 25 canais desta lista e os organizou por categoria. O usuário confirmou que o guia aparece e que SBT Interior tem imagem e áudio no player interno. O VLC permanece como alternativa.
 
 No Windows, com um único BTV autorizado no ADB, execute na raiz deste projeto:
 
@@ -108,7 +108,7 @@ Selecione **Guardar e carregar**. A lista pública é buscada diretamente pelo B
 
 ## 6. Simplificar a tela inicial
 
-Abra o Projectivy e deixe **VLC em primeiro** e **SmartTube em segundo**. Oculte atalhos que confundem a pessoa que usa a TV; ocultar na categoria do Projectivy não desinstala nem desativa aplicativos. Configure o Projectivy como aplicativo de Início nas configurações do Android ou no aviso do próprio launcher. Teste a tecla **Início** e a navegação com as setas do controle.
+Abra o Projectivy e deixe **OpenTV em primeiro, VLC em segundo e SmartTube em terceiro**. Oculte atalhos que confundem a pessoa que usa a TV; ocultar na categoria do Projectivy não desinstala nem desativa aplicativos. Configure o Projectivy como aplicativo de Início nas configurações do Android ou no aviso do próprio launcher. Teste a tecla **Início** e a navegação com as setas do controle. No BTV testado, **Início > OK** abre o OpenTV; o VLC está um cartão à direita.
 
 Para ícones maiores e um fundo simples, abra **Projectivy > Configurações > Aparência > Cartões > Tamanho dos cartões** e aumente dois passos. Escolha um fundo preto e estático. No BTV testado, esses ajustes já foram feitos; para voltar ao tamanho anterior, reduza dois passos no mesmo menu.
 
