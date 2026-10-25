@@ -26,9 +26,11 @@ Ambos validam o formato, fazem backup se já existir uma cópia da lista curta, 
 
 ## Add-ons e jogos
 
-A aba **Add-ons (Stremio)** do OpenTV pede URL de manifesto, não arquivo JSON local. `https://v3-cinemeta.strem.io/manifest.json` é manifesto oficial de metadados; `https://torrentio.strem.fun/manifest.json` responde como complemento comunitário de fontes torrent. Nenhum deles fornece os canais ao vivo solicitados. Cinemeta e Public Domain Movies foram testados no OpenTV deste BTV e a seção Filmes continuou vazia; por isso a aba segue sem add-ons. Não foi configurado Torrentio.
+A aba **Add-ons (Stremio)** do OpenTV pede URL de manifesto, não arquivo JSON local. `https://v3-cinemeta.strem.io/manifest.json` é manifesto oficial de metadados; `https://torrentio.strem.fun/manifest.json` responde como complemento comunitário de fontes torrent. Nenhum deles fornece os canais ao vivo solicitados. Em 25/10/2026, Cinemeta e Torrentio foram adicionados para teste no BTV: a seção Filmes continuou vazia. Ambos foram removidos após o teste. Nesta versão do OpenTV, Filmes depende do catálogo VOD de um fornecedor; a lista M3U atual só contém TV ao vivo.
 
-O Snes9x EX+ já contém três jogos homebrew gratuitos (Bucket, Rockfall e BLT). Não há pacote de dez jogos comerciais: um arquivo em GitHub, No-Intro ou Archive.org não prova licença de distribuição. O gamepad ainda precisa ser conectado e testado.
+O Snes9x EX+ contém **dez jogos homebrew gratuitos**, incluindo Bucket, Rockfall e BLT. O script `scripts/instalar-homebrew-snes.ps1` baixa os arquivos diretamente do repositório RetroBrews, verifica tamanho e hash e não sobrescreve arquivos diferentes. Execute com `-Serial 'IP:PORTA'`; `-VerifyOnly` confere uma instalação existente sem copiar arquivos. Os dez hashes foram conferidos no BTV. Não há pacote de dez jogos comerciais: um arquivo em GitHub, No-Intro ou Archive.org não prova licença de distribuição. O gamepad ainda precisa ser conectado e testado.
+
+O estado anterior aos testes está em `backups/BTV13-backup-before-proposal.zip`. A execução e as limitações estão descritas em `reports/execucao-proposta-2026-10-25.md`.
 
 ## Verificação rápida
 
