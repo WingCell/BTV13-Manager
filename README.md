@@ -85,6 +85,8 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-playlist
 
 Esse teste não garante imagem ou áudio no BTV. Faça o teste visual quando for conveniente e anote somente os canais que falharem. As URLs da Pluto passam por um redirecionador público de terceiros, que pode parar de funcionar; o aplicativo oficial da Pluto é uma alternativa se for compatível com sua TV.
 
+**Ao procurar outras listas:** estar no GitHub não comprova autorização dos sinais. Em 24/10/2026, a branch padrão de [Ramys/Iptv-Brasil-2026](https://github.com/Ramys/Iptv-Brasil-2026) não tinha o arquivo `CanaisBR06`; outra lista do projeto incluía canais pagos e conteúdo adulto. [IPTV-Brazuka](https://github.com/xKzin/IPTV-Brazuka) reunia canais pagos em endereços de terceiros com credenciais expostas. Não importe essas listas inteiras para uma TV usada por crianças ou idosos, nem instale APKs de players oferecidos por sites de arquivos. O [EPG brazil1.xml](https://github.com/globetvapp/epg/blob/main/Brazil/brazil1.xml) citado em fóruns ainda continha programação de dezembro de 2025 na consulta de outubro de 2026. Confira sempre a data da grade antes de adicioná-la.
+
 ## 6. Simplificar a tela inicial
 
 Abra o Projectivy e deixe **VLC em primeiro** e **SmartTube em segundo**. Oculte atalhos que confundem a pessoa que usa a TV; ocultar na categoria do Projectivy não desinstala nem desativa aplicativos. Configure o Projectivy como aplicativo de Início nas configurações do Android ou no aviso do próprio launcher. Teste a tecla **Início** e a navegação com as setas do controle.
