@@ -8,7 +8,7 @@ https://fpa-gateway.tvcultura.com.br:8181/memfs/606caef0-a290-413d-9f1f-8fcdb3a7
 #EXTINF:-1 tvg-id="TVBrasil.br" group-title="TV aberta",TV Brasil
 https://tvbrasil-stream.ebc.com.br/index.m3u8
 #EXTINF:-1 tvg-id="TVParanaTurismo.br" group-title="TV aberta",TV Paraná
-http://200.189.113.201/hls/tve.m3u8
+https://aovivo.paranaeducativa.pr.gov.br/hls/tve.m3u8
 #EXTINF:-1 tvg-id="TVERS.br" group-title="TV aberta",TVE RS
 https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8
 #EXTINF:-1 tvg-id="TVTerceiroAnjo.br" group-title="Religião",TV Terceiro Anjo
