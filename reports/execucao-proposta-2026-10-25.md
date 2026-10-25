@@ -12,6 +12,8 @@ O M3U de dez entradas foi montado separadamente em `work/btv13-proposta-10-canai
 
 O domínio `cdn.live.br1.jmvstream.com` usado por alguns canais existentes é diferente de `cdn.jmvstream.com.br`; o funcionamento de um não valida os caminhos do outro. Mesmo quando há HTTP 200, isso não prova reprodução, licença ou estabilidade.
 
+**Nova hipótese de DNS/User-Agent recebida depois:** consultas diretas a `1.1.1.1` e `8.8.8.8` também retornaram “nome DNS não existe” para ambos os domínios. O BTV já mostrava `net.dns2=8.8.8.8` e `net.dns3=8.8.4.4`. Portanto, não alterei o DNS. Acrescentar `?ua=Mozilla/5.0` ao URL não muda o cabeçalho HTTP `User-Agent` do player e, sobretudo, não resolve um domínio inexistente; a nova lista não foi importada.
+
 ## Stremio no OpenTV 0.11.7
 
 - Verifiquei na interface que a aba **Definições > Add-ons (Stremio)** aceita URLs de manifesto.
