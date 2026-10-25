@@ -14,6 +14,8 @@ O domínio `cdn.live.br1.jmvstream.com` usado por alguns canais existentes é di
 
 **Nova hipótese de DNS/User-Agent recebida depois:** consultas diretas a `1.1.1.1` e `8.8.8.8` também retornaram “nome DNS não existe” para ambos os domínios. O BTV já mostrava `net.dns2=8.8.8.8` e `net.dns3=8.8.4.4`. Portanto, não alterei o DNS. Acrescentar `?ua=Mozilla/5.0` ao URL não muda o cabeçalho HTTP `User-Agent` do player e, sobretudo, não resolve um domínio inexistente; a nova lista não foi importada.
 
+**Nova proposta de filtrar iptv-org Brasil:** baixei `https://iptv-org.github.io/iptv/countries/br.m3u` em 25/10/2026 (HTTP 200, 398 entradas) e reproduzi o filtro por nomes sugerido. Ele selecionou **23 entradas**, não dez. Não houve correspondência para os nomes exatos “TV Globo SP”, “Discovery Channel”, “Premiere Clubes” e “Canção Nova”. A lista continha Discovery Kids e Discovery World marcados como geobloqueados, que não são Discovery Channel; não havia qualquer entrada com “Premiere”. “Record” selecionou onze variantes, inclusive Record News e afiliadas. Não importei o resultado. O projeto iptv-org se descreve como coleção de links públicos enviados por usuários, cuja autorização é presumida pelos mantenedores, não verificada individualmente para cada sinal.
+
 ## Stremio no OpenTV 0.11.7
 
 - Verifiquei na interface que a aba **Definições > Add-ons (Stremio)** aceita URLs de manifesto.
@@ -25,6 +27,7 @@ O domínio `cdn.live.br1.jmvstream.com` usado por alguns canais existentes é di
 ## Jogos SNES
 
 - O repositório `retro-games/snes` proposto respondeu 404, então o script que baixa jogos comerciais não foi executado.
+- A variante seguinte apontou para `snes9x/snes9x/snes/super-mario-world.sfc`; a API do GitHub também retornou 404 para esse caminho. O repositório do emulador não foi tratado como fonte de jogos licenciados.
 - Baixei sete jogos homebrew diretamente do repositório `retrobrews/snes-games`, conferi tamanho e SHA-256 e copiei para `/sdcard/Games/SNES/` sem sobrescrever os três existentes.
 - O BTV agora contém **10 arquivos de jogos homebrew**, total aproximado de 9,5 MB. O script [`instalar-homebrew-snes.ps1`](../scripts/instalar-homebrew-snes.ps1) foi executado em modo `-VerifyOnly` e conferiu **10/10 hashes** no aparelho.
 - Não foram distribuídas ROMs comerciais. O controle de videogame ainda não foi conectado, então não há teste de jogabilidade com gamepad.
