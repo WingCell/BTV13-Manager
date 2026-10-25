@@ -21,6 +21,13 @@
         "erro":  null
     },
     {
+        "canal":  "RedeTV! Mais",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cdn.live.br1.jmvstream.com",
+        "erro":  null
+    },
+    {
         "canal":  "TV Cultura",
         "http":  200,
         "hls":  true,
@@ -39,6 +46,13 @@
         "http":  200,
         "hls":  true,
         "destino":  "tvbrasil-stream.ebc.com.br",
+        "erro":  null
+    },
+    {
+        "canal":  "TV Câmara",
+        "http":  200,
+        "hls":  true,
+        "destino":  "stream3.camara.gov.br",
         "erro":  null
     },
     {
@@ -203,3 +217,4 @@
         "erro":  null
     }
 ]
+
