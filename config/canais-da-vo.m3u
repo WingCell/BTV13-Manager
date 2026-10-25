@@ -1,20 +1,24 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="SBTInterior.br" group-title="TV aberta",SBT Interior
-https://cdn.live.br1.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8
+https://cdn.live.br1.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8?btv13=SBTInterior
 #EXTINF:-1 tvg-id="TVCultura.br" group-title="TV aberta",TV Cultura
-https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8
+https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8?btv13=TVCultura
 #EXTINF:-1 tvg-id="CulturaFast.br" group-title="TV aberta",Cultura Fast
 https://fpa-gateway.tvcultura.com.br:8181/memfs/606caef0-a290-413d-9f1f-8fcdb3a73831.m3u8
 #EXTINF:-1 tvg-id="TVBrasil.br" group-title="TV aberta",TV Brasil
 https://tvbrasil-stream.ebc.com.br/index.m3u8
 #EXTINF:-1 tvg-id="SBTNews.br" group-title="Noticias",SBT News
 https://dai.google.com/linear/hls/event/1XSOdtQ0SH2G8OEmEfGgjQ/master.m3u8
+#EXTINF:-1 tvg-id="VEJAPlusTV.br" group-title="Noticias",VEJA+ TV
+https://gpa-vja.otteravision.com/gpa/vja/vja.m3u8
 #EXTINF:-1 tvg-id="PlutoTVRecordNews.us@BR" group-title="Noticias",Record News (Pluto TV)
 https://jmp2.uk/plu-6102e04e9ab1db0007a980a1.m3u8
 #EXTINF:-1 tvg-id="CanalUOL.br" group-title="Variedades",Canal UOL
 https://video24.mais.uol.com.br/live/6146.m3u8
 #EXTINF:-1 tvg-id="PlutoTVNovelasBR.br" group-title="Novelas",Novelas (Pluto TV)
 https://jmp2.uk/plu-5f512365abe1f50007d3ff56.m3u8
+#EXTINF:-1 tvg-id="PlutoTVSeriesNovelescas.us@BR" group-title="Novelas",Séries Novelescas (Pluto TV)
+https://jmp2.uk/plu-691627e4a29a6123e400b3e0.m3u8
 #EXTINF:-1 tvg-id="PlutoTVEsportes.br" group-title="Esportes",Esportes (Pluto TV)
 https://jmp2.uk/plu-5f32d2db0af67400077f29c4.m3u8
 #EXTINF:-1 tvg-id="PlutoTVCineFamilia.br" group-title="Filmes",Cine Família (Pluto TV)
@@ -23,8 +27,14 @@ https://jmp2.uk/plu-5f171f032cd22e0007f17f3d.m3u8
 https://jmp2.uk/plu-5fa1612a669ba0000702017b.m3u8
 #EXTINF:-1 tvg-id="PlutoTVFilmesNacionais.br" group-title="Filmes",Filmes Nacionais (Pluto TV)
 https://jmp2.uk/plu-5f5a545d0dbf7f0007c09408.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineSucessos.us@BR" group-title="Filmes",Cine Sucessos (Pluto TV)
+https://jmp2.uk/plu-5f120e94a5714d00074576a1.m3u8
+#EXTINF:-1 tvg-id="PlutoTVCineRomance.us@BR" group-title="Filmes",Cine Romance (Pluto TV)
+https://jmp2.uk/plu-5f171f988ab9780007fa95ea.m3u8
 #EXTINF:-1 tvg-id="PlutoTVNatureza.br" group-title="Documentários",Natureza (Pluto TV)
 https://jmp2.uk/plu-5f1213ba0ecebc00070e170f.m3u8
+#EXTINF:-1 tvg-id="PlutoTVAnimais.us@BR" group-title="Documentários",Animais (Pluto TV)
+https://jmp2.uk/plu-6474aa984cfc2c0008883a92.m3u8
 #EXTINF:-1 tvg-id="PlutoTVHistoria.br" group-title="Documentários",História (Pluto TV)
 https://jmp2.uk/plu-5f1ef1a8cec6be00072a7ac9.m3u8
 #EXTINF:-1 tvg-id="SmithsonianChannelPlutoTV.br" group-title="Documentários",Smithsonian Channel (Pluto TV)
@@ -35,6 +45,7 @@ https://jmp2.uk/plu-6077045b6031bd00078de127.m3u8
 https://jmp2.uk/plu-61099df8cee03b00074b2ecf.m3u8
 #EXTINF:-1 tvg-id="PlutoTVInvestigacao.br" group-title="Séries",Investigação (Pluto TV)
 https://jmp2.uk/plu-5f32cf37c9ff2b00082adbc8.m3u8
+#EXTINF:-1 tvg-id="NickelodeonClassico.us@BR" group-title="Infantil",Nickelodeon Clássico (Pluto TV)
+https://jmp2.uk/plu-6824ce10c5d53e1351ceb8d1.m3u8
 #EXTINF:-1 tvg-id="TVCamara.br" group-title="Públicos",TV Câmara
 https://stream3.camara.gov.br/tv1/manifest.m3u8
-
