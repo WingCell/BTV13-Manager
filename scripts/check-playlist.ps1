@@ -12,10 +12,14 @@ $results = @()
 for ($i = 1; $i -lt $lines.Count; $i++) {
     if (-not $lines[$i].StartsWith('#EXTINF:')) { continue }
     $name = ($lines[$i] -split ',', 2)[-1].Trim()
-    if ($i + 1 -ge $lines.Count -or $lines[$i + 1] -notmatch '^https://') {
-        throw "URL HTTPS ausente após o canal $name."
+    if ($i + 1 -ge $lines.Count) {
+        throw "URL ausente após o canal $name."
     }
     $url = $lines[++$i].Trim()
+    # Exceção documentada: a TV Paraná oferece este sinal público apenas por HTTP.
+    if ($url -notmatch '^https://' -and $url -ne 'http://200.189.113.201/hls/tve.m3u8') {
+        throw "URL não aprovada após o canal $name."
+    }
     $row = [ordered]@{ canal = $name; http = $null; hls = $false; destino = $null; erro = $null }
     try {
         $response = Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 10
@@ -40,4 +44,3 @@ if ($reportDir) { New-Item -ItemType Directory -Path $reportDir -Force | Out-Nul
 $results | ConvertTo-Json -Depth 3 | Set-Content -LiteralPath $Report -Encoding UTF8
 $results | Format-Table -AutoSize
 if ($results | Where-Object { -not $_.hls -or $_.erro }) { exit 1 }
-
