@@ -2,7 +2,7 @@
 
 Este guia configura uma TV Box Android para uma pessoa idosa: poucos ícones, canais gratuitos em um guia no OpenTV, VLC como reserva e vídeos em um cliente para controle remoto. Foi testado em um BTV 13 com Android 11 e processador ARM de 32 bits. Outros aparelhos podem ter menus, pacotes e portas ADB diferentes.
 
-**O que este projeto inclui:** uma lista M3U com 27 canais públicos e temáticos gratuitos selecionados, incluindo novelas, filmes, esporte e documentários. Ela **não contém TV Globo, Record principal, Discovery Channel nem Premiere**, e não promete jogos específicos. Record News e os canais de documentários gratuitos não são esses canais pagos. URLs de TV podem mudar; o teste automático confirma apenas se a playlist HLS responde naquele momento. Faça a conferência de imagem e som na sua TV depois de instalar.
+**O que este projeto inclui:** uma lista M3U com 29 canais públicos e temáticos gratuitos selecionados, incluindo SBT, Record e Band por afiliadas, novelas, filmes, esporte e documentários. Record (afiliada MT) e Band (afiliada PA) usam os sinais publicados nas páginas das respectivas emissoras. A lista **não contém TV Globo, Discovery Channel nem Premiere**, e não promete jogos específicos. Record News e os canais de documentários gratuitos não são esses canais pagos. URLs de TV podem mudar; o teste automático confirma apenas se a playlist HLS responde naquele momento. Faça a conferência de imagem e som na sua TV depois de instalar.
 
 ## 1. Preparar o computador
 
