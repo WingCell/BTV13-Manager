@@ -37,3 +37,8 @@ O domínio `cdn.live.br1.jmvstream.com` usado por alguns canais existentes é di
 ## Estado final desta execução
 
 Projectivy e OpenTV continuam instalados. Deixei o BTV na tela inicial do Projectivy. A lista principal de 29 canais foi novamente extraída e seu hash permaneceu idêntico ao backup; os dez canais propostos não passaram no teste DNS. Os add-ons de teste foram removidos. Snes9x EX+ tem dez jogos homebrew, aguardando teste com gamepad. Não executei o Bash fornecido na proposta porque usa caminhos fictícios, presume porta ADB fixa e pode remover o ZIP antes de verificar a extração.
+
+## Verificação GET da lista curta
+
+O prompt seguinte propôs usar GET com User-Agent e conferir o início do manifesto. Criei [`Test-Btv13Playlist.ps1`](../scripts/Test-Btv13Playlist.ps1) e executei o teste na lista curta existente. Em 25/10/2026, **10/10 URLs responderam HTTP 200 com cabeçalho `#EXTM3U`**; o resultado completo está em [`m3u-get-check-2026-10-25.csv`](m3u-get-check-2026-10-25.csv). Isso confirma a obtenção de manifestos, não prova a reprodução contínua nem a autorização de cada retransmissão. O novo prompt não trouxe URLs inéditos e válidos para TV Globo SP, Discovery Channel ou Premiere Clubes. A lista principal do BTV não foi alterada.
+
