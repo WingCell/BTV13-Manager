@@ -1,0 +1,32 @@
+# Execução da proposta recebida — 25/10/2026
+
+## Backup anterior às mudanças
+
+- [Backup local](../backups/BTV13-backup-before-proposal.zip): lista de 29 canais extraída do BTV, lista curta anterior, APKs OpenTV 0.11.7 e Projectivy 4.72, três jogos homebrew originais e instruções de recuperação. SHA-256 do ZIP: `396660eea66aeb6ce0eca9792f93e5ba59bdad9e920c1e29769d20b1f55779e0`.
+- Cópia adicional da lista principal no BTV: `/sdcard/Download/BTV13-Backup/canais-da-vo.m3u`. Hash local e remoto: `0f28dda67fcb6cf28ba29a2b269acbd9a580c4f132f6abfb8b713b697111a57a`.
+- Dados privados de aplicativos não puderam ser exportados por ADB comum. A lista ativa, as preferências e o launcher não foram substituídos.
+
+## Canais da proposta
+
+O M3U de dez entradas foi montado separadamente em `work/btv13-proposta-10-canais.m3u`. O teste `HEAD` exigido pelo texto proposto terminou com **0/10 HTTP 200**; todos os URLs falharam em DNS. No próprio BTV, `ping` retornou `unknown host` para os dois domínios usados: `play.plus.mz.globo.com` e `cdn.jmvstream.com.br`. Assim, a lista não foi importada nem copiada como fonte ativa. O fornecedor **TV AO VIVO**, com 29 canais, permanece ativo.
+
+O domínio `cdn.live.br1.jmvstream.com` usado por alguns canais existentes é diferente de `cdn.jmvstream.com.br`; o funcionamento de um não valida os caminhos do outro. Mesmo quando há HTTP 200, isso não prova reprodução, licença ou estabilidade.
+
+## Stremio no OpenTV 0.11.7
+
+- Verifiquei na interface que a aba **Definições > Add-ons (Stremio)** aceita URLs de manifesto.
+- Adicionei Cinemeta. A aba Filmes continuou em “Sem filmes”. Adicionei Torrentio sem parâmetros; o resultado continuou igual. Ambos foram removidos após o teste, deixando a aba de add-ons como estava.
+- No computador, o catálogo público do Cinemeta respondeu HTTP 200. O URL `https://torrentio.strem.fun/manifest.json?sort=seeders_desc&limit=50` devolveu exatamente o mesmo manifesto que o URL simples; isso não confirma a otimização afirmada.
+- O código do OpenTV mostra que **Filmes** lê o catálogo VOD do fornecedor IPTV. Os add-ons Stremio são consultados para fontes de reprodução de um filme já presente, e a busca de ID depende da configuração de TMDB. O fornecedor M3U atual não fornece catálogo VOD. Alterar idioma ou acrescentar Torrentio não cria filmes nessa aba.
+- A aba **Me** do aparelho mostrou apenas perfis; não encontrei as opções “País: Brasil” ou “Prefer Dubbed” descritas na proposta.
+
+## Jogos SNES
+
+- O repositório `retro-games/snes` proposto respondeu 404, então o script que baixa jogos comerciais não foi executado.
+- Baixei sete jogos homebrew diretamente do repositório `retrobrews/snes-games`, conferi tamanho e SHA-256 e copiei para `/sdcard/Games/SNES/` sem sobrescrever os três existentes.
+- O BTV agora contém **10 arquivos de jogos homebrew**, total aproximado de 9,5 MB. O script [`instalar-homebrew-snes.ps1`](../scripts/instalar-homebrew-snes.ps1) foi executado em modo `-VerifyOnly` e conferiu **10/10 hashes** no aparelho.
+- Não foram distribuídas ROMs comerciais. O controle de videogame ainda não foi conectado, então não há teste de jogabilidade com gamepad.
+
+## Estado final desta execução
+
+Projectivy e OpenTV continuam instalados. Deixei o BTV na tela inicial do Projectivy. A lista principal de 29 canais foi novamente extraída e seu hash permaneceu idêntico ao backup; os dez canais propostos não passaram no teste DNS. Os add-ons de teste foram removidos. Snes9x EX+ tem dez jogos homebrew, aguardando teste com gamepad. Não executei o Bash fornecido na proposta porque usa caminhos fictícios, presume porta ADB fixa e pode remover o ZIP antes de verificar a extração.
