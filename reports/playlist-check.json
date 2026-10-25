@@ -1,0 +1,136 @@
+[
+    {
+        "canal":  "SBT Interior",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cdn.live.br1.jmvstream.com",
+        "erro":  null
+    },
+    {
+        "canal":  "TV Cultura",
+        "http":  200,
+        "hls":  true,
+        "destino":  "player-tvcultura.stream.uol.com.br",
+        "erro":  null
+    },
+    {
+        "canal":  "Cultura Fast",
+        "http":  200,
+        "hls":  true,
+        "destino":  "fpa-gateway.tvcultura.com.br",
+        "erro":  null
+    },
+    {
+        "canal":  "TV Brasil",
+        "http":  200,
+        "hls":  true,
+        "destino":  "tvbrasil-stream.ebc.com.br",
+        "erro":  null
+    },
+    {
+        "canal":  "SBT News",
+        "http":  200,
+        "hls":  true,
+        "destino":  "dai.google.com",
+        "erro":  null
+    },
+    {
+        "canal":  "Record News (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "Canal UOL",
+        "http":  200,
+        "hls":  true,
+        "destino":  "video24.mais.uol.com.br",
+        "erro":  null
+    },
+    {
+        "canal":  "Novelas (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "Esportes (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "Cine Família (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "Cine Clássicos (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "Filmes Nacionais (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "Natureza (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "História (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "Smithsonian Channel (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "MasterChef (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "O Encantador de Cães (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "Investigação (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "TV Câmara",
+        "http":  200,
+        "hls":  true,
+        "destino":  "stream3.camara.gov.br",
+        "erro":  null
+    }
+]
+
