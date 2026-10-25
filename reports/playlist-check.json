@@ -35,6 +35,13 @@
         "erro":  null
     },
     {
+        "canal":  "VEJA+ TV",
+        "http":  200,
+        "hls":  true,
+        "destino":  "gpa-vja.otteravision.com",
+        "erro":  null
+    },
+    {
         "canal":  "Record News (Pluto TV)",
         "http":  200,
         "hls":  true,
@@ -50,6 +57,13 @@
     },
     {
         "canal":  "Novelas (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "Séries Novelescas (Pluto TV)",
         "http":  200,
         "hls":  true,
         "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
@@ -84,7 +98,28 @@
         "erro":  null
     },
     {
+        "canal":  "Cine Sucessos (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "Cine Romance (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
         "canal":  "Natureza (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
+        "canal":  "Animais (Pluto TV)",
         "http":  200,
         "hls":  true,
         "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
@@ -126,6 +161,13 @@
         "erro":  null
     },
     {
+        "canal":  "Nickelodeon Clássico (Pluto TV)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv",
+        "erro":  null
+    },
+    {
         "canal":  "TV Câmara",
         "http":  200,
         "hls":  true,
@@ -133,4 +175,3 @@
         "erro":  null
     }
 ]
-
