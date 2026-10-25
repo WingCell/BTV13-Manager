@@ -7,6 +7,20 @@
         "erro":  null
     },
     {
+        "canal":  "Record (afiliada MT)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cdn.live.br1.jmvstream.com",
+        "erro":  null
+    },
+    {
+        "canal":  "Band (afiliada PA)",
+        "http":  200,
+        "hls":  true,
+        "destino":  "cdn.live.br1.jmvstream.com",
+        "erro":  null
+    },
+    {
         "canal":  "TV Cultura",
         "http":  200,
         "hls":  true,
