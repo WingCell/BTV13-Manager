@@ -11,3 +11,5 @@ As versões anteriores das listas foram preservadas em backups/btv13_extras-ante
 Stremio: Cinemeta, WatchHub, YouTube, OpenSubtitles v3 e Public Domain Movies instalados. O complemento oficial de YouTube não retornou canais nas buscas por NetMovies, BBC, SBT e Turma da Mônica. WatchHub abriu Pluto TV, mas o app mostrou entrada gratuita por e-mail; reprodução ainda não confirmada. Nenhum complemento comunitário PT-BR sem direitos confirmados foi adicionado.
 
 SNES: 10 jogos homebrew disponíveis em /sdcard/Games/SNES/, 10/10 hashes conferidos. O usuário fará a configuração do gamepad.
+
+NetMovies 7.0.5 (`br.com.netmovies.android`) foi instalado pela Play Store oficial e aberto no BTV. A loja anuncia cerca de 2.500 títulos licenciados, dublados e gratuitos com anúncios. Um filme no BTV mostrou “Áudio Português”, mas “Assistir agora” pediu login gratuito. A tela de entrada está pronta para o usuário; reprodução ainda não confirmada. Cadastro oficial: https://www.netmovies.com.br/session/simple-register .
