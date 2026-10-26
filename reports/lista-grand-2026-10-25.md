@@ -3,7 +3,7 @@
 ## Resultado instalado
 
 - O fornecedor **TV AO VIVO** conserva seus **31 canais**. Seu arquivo está em `config/canais-da-vo.m3u`; uma cópia anterior a esta operação foi salva em `backups/canais-da-vo-antes-grand-2026-10-25.m3u` (SHA-256 `ff2031d1c154b014de1002ce374d1ffc0dec211c7673211e0b866dc8925041b1`).
-- O fornecedor separado **MAIS CANAIS** foi cadastrado no OpenTV 0.11.7 com `config/btv13_extras.m3u`: **60 canais novos**. No guia, o filtro **Fonte** foi deixado em **TV AO VIVO** para a tela principal continuar simples. Para explorar os novos, selecionar **Fonte > MAIS CANAIS**; **Todas as fontes** reúne os 91.
+- O fornecedor separado **MAIS CANAIS** foi cadastrado no OpenTV 0.11.7 com `config/btv13_extras.m3u`: **60 canais novos**. O guia oferece **Fonte > TV AO VIVO**, **MAIS CANAIS** e **Todas as fontes**. **Limitação confirmada:** após fechar e abrir o OpenTV, o filtro volta a **Todas as fontes**; portanto, a grade de 91 aparece ao iniciar enquanto a segunda fonte estiver instalada. A escolha entre manter os extras no aparelho ou preservar a tela inicial de 31 canais está pendente com o usuário.
 - `config/btv13_grand.m3u` contém os **91 canais combinados** e serve para reproduzir a configuração em outro aparelho. Não foi importado como segundo fornecedor no BTV atual, pois duplicaria os 31 da lista principal.
 - Dois candidatos novos foram descartados por HTTP 404: BabyFirst Brazil e Pluto TV Karaoke por Stingray.
 
@@ -23,7 +23,7 @@ Um 200 no manifesto não comprova a origem do sinal, a decodificação no BTV ou
 
 1. Instalar OpenTV compatível e importar `config/btv13_grand.m3u` **por URL HTTP(S)**. A versão 0.11.7 instalada apresenta **URL da lista M3U** e pede “a ligação http completa”; não foi encontrado seletor de arquivo local nem o menu “Gerenciador de Listas” citado no roteiro externo.
 2. Para reproduzir exatamente esta organização, adicionar dois fornecedores: `config/canais-da-vo.m3u` como **TV AO VIVO** e `config/btv13_extras.m3u` como **MAIS CANAIS**. Os URLs públicos estão no repositório `WingCell/BTV13-Manager` em `raw.githubusercontent.com`.
-3. No guia, escolher **Fonte > TV AO VIVO** para a avó; trocar para **MAIS CANAIS** quando quiser os extras. Testar na televisão alguns favoritos por imagem, som e estabilidade, sem presumir que todos os 91 foram testados visualmente.
+3. No guia, escolher **Fonte > TV AO VIVO** para a avó; trocar para **MAIS CANAIS** quando quiser os extras. O OpenTV 0.11.7 não persiste essa escolha ao reiniciar o aplicativo: a grade volta a **Todas as fontes**. Testar na televisão alguns favoritos por imagem, som e estabilidade, sem presumir que todos os 91 foram testados visualmente.
 
 ## Reverter a ampliação
 
