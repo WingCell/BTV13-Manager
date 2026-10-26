@@ -181,4 +181,15 @@ https://jmp2.uk/plu-5f515ebac01c0f00080e8439.m3u8
 https://jmp2.uk/plu-5ff609de50ab210008025c1b.m3u8
 #EXTINF:-1 tvg-id="TurmadaMonica.us@Brazil" tvg-name="Turma da Monica" group-title="Infantil",Turma da Monica
 https://jmp2.uk/plu-5f997e44949bc70007a6941e.m3u8
-
+#EXTINF:-1 tvg-id="COMBrasil.br@SD" tvg-name="COM Brasil" group-title="Variedades",COM Brasil
+https://dfr80qz435crc.cloudfront.net/EFGH/Amagi/NewCo/New_Brasil_BR/New_Brasil.m3u8
+#EXTINF:-1 tvg-id="FIFAPlus.uk@Portuguese" tvg-name="FIFA+ em Português" group-title="Esportes",FIFA+ em Português
+https://e3be9ac5.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctYnJfRklGQVBsdXNQb3J0dWd1ZXNlX0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-id="RedBullTV.at@BR" tvg-name="Red Bull TV Brasil" group-title="Esportes",Red Bull TV Brasil
+https://d03ae6b5c6724c24867e97a3dc04934a.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-1026-WORBBRPTFAST-WHALETVPLUS/1026/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="RedeBrasil.br@SD" tvg-name="Rede Brasil" group-title="TV Aberta",Rede Brasil
+https://redebrasil.nuvemplay.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="RedeMinas.br@SD" tvg-name="Rede Minas" group-title="TV Aberta",Rede Minas
+https://8hzcavccys.zoeweb.tv/redeminas/ngrp:redeminas_all/playlist.m3u8
+#EXTINF:-1 tvg-id="TimesBrasil.br@SD" tvg-name="Times Brasil" group-title="Notícias",Times Brasil
+https://ssai2-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/21fdb6dd7491406bba86497a24390a25/playlist.m3u8
