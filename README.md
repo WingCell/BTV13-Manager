@@ -52,6 +52,7 @@ Guarde o nome da atividade HOME original para poder voltar depois. Não publique
 - **VLC:** player gratuito da [VideoLAN](https://www.videolan.org/vlc/download-android.html), disponível na Play Store ou nos [APKs oficiais](https://download.videolan.org/pub/videolan/vlc-android/last/). Escolha a arquitetura indicada por `ro.product.cpu.abilist`.
 - **Projectivy Launcher:** tela inicial simples. Tente primeiro a [Play Store](https://play.google.com/store/apps/details?id=com.spocky.projengmenu). Se a loja considerar o aparelho incompatível, consulte o [release oficial do desenvolvedor](https://github.com/spocky/miproja1/releases) e confira versão e hash publicados antes de instalar.
 - **SmartTube:** cliente de vídeos de código aberto criado para Android TV e controle remoto. O [desenvolvedor](https://github.com/yuliskov/SmartTube) recomenda baixar pelos seus canais e informa que não publica oficialmente em lojas. Neste BTV foi usado o [build independente do F-Droid](https://f-droid.org/en/packages/app.smarttube.fdroid/), compilado do código-fonte e assinado pelo F-Droid; ele **não é o APK assinado pelo desenvolvedor**. O projeto relatou comprometimento de alguns builds antigos: evite sites agregadores, confira a origem e mantenha o Play Protect ativo. O [YouTube pode bloquear clientes que retiram anúncios](https://support.google.com/youtube/answer/12318250?hl=pt-BR); mantenha o app oficial como alternativa.
+- **NetMovies:** catálogo gratuito de filmes e séries com áudio em português. Instale o [app oficial da Play Store](https://play.google.com/store/apps/details?id=br.com.netmovies.android). A versão 7.0.5 abriu neste BTV, mas pede login gratuito ao reproduzir; crie a conta no [site oficial](https://www.netmovies.com.br/session/simple-register) se necessário. A reprodução ainda depende de confirmação no aparelho.
 
 Se instalar APKs manualmente, confira antes nome, versão, arquitetura, permissões e origem. Em um BTV ARM32, use APK compatível com `armeabi-v7a`. Exemplo:
 
@@ -140,9 +141,13 @@ No BTV 13 testado, o comando de retorno foi `adb shell cmd package set-home-acti
 
 Para transferir arquivos sem computador, o [LocalSend](https://localsend.org/) funciona na rede local e tem versões para iPhone e Android. Instale de lojas/fontes oficiais, permita **Rede Local** no iPhone e mantenha ambos no mesmo Wi-Fi. A transferência entre os dois ainda depende de teste em cada aparelho. Controle ADB direto pelo iPhone requer cliente compatível e depuração por rede ativa; por segurança, não deixe esse acesso ligado permanentemente nem exponha a porta à internet.
 
+## 8. Jogos de Super Nintendo
+
+Instale um emulador compatível, como o Snes9x EX+, e conecte um gamepad Bluetooth ou USB. Copie somente jogos que você pode distribuir ou usar. Para jogos homebrew, consulte o projeto [RetroBrews SNES](https://github.com/retrobrews/snes-games) e respeite os termos de distribuição de cada arquivo; não publique ROMs comerciais nem reenvie o pacote do projeto como se fosse seu. Neste BTV, dez jogos homebrew foram colocados em `/sdcard/Games/SNES/` e conferidos por hash. Abra o Snes9x e selecione essa pasta; depois configure os botões do seu controle no emulador.
+
 ## Manutenção
 
-- Se um canal parar, verifique a URL com o script e substitua o item no M3U; depois copie o arquivo atualizado para a TV. Não precisa testar toda a lista manualmente com outra pessoa.
+- Se um canal parar, verifique a URL com o script e substitua o item no M3U publicado; depois reabra o OpenTV para recarregar a fonte. A cópia local no BTV serve de backup e não atualiza o fornecedor automaticamente.
 - Guarde pelo menos alguns gigabytes livres. Evite dezenas de apps que iniciam junto com a TV.
 - Não faça root, restauração de fábrica ou remova pacotes do sistema para tentar acelerar o aparelho.
 - Para futebol, consulte as transmissões gratuitas anunciadas pelos detentores de direitos. O canal Esportes da Pluto não equivale ao Premiere.
