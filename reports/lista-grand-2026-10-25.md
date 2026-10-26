@@ -5,6 +5,7 @@
 - O fornecedor **TV AO VIVO** conserva seus **31 canais**. Seu arquivo está em `config/canais-da-vo.m3u`; uma cópia anterior a esta operação foi salva em `backups/canais-da-vo-antes-grand-2026-10-25.m3u` (SHA-256 `ff2031d1c154b014de1002ce374d1ffc0dec211c7673211e0b866dc8925041b1`).
 - O fornecedor separado **MAIS CANAIS** foi cadastrado no OpenTV 0.11.7 com `config/btv13_extras.m3u`: **60 canais novos**. O guia oferece **Fonte > TV AO VIVO**, **MAIS CANAIS** e **Todas as fontes**. **Limitação confirmada:** após fechar e abrir o OpenTV, o filtro volta a **Todas as fontes**; portanto, a grade de 91 aparece ao iniciar enquanto a segunda fonte estiver instalada. A escolha entre manter os extras no aparelho ou preservar a tela inicial de 31 canais está pendente com o usuário.
 - `config/btv13_grand.m3u` contém os **91 canais combinados** e serve para reproduzir a configuração em outro aparelho. Não foi importado como segundo fornecedor no BTV atual, pois duplicaria os 31 da lista principal.
+- Cópias dos dois novos arquivos foram guardadas no BTV em `/sdcard/Download/BTV13-Backup/`, com hashes SHA-256 conferidos: lista combinada `1029c70e16dc19d8257afc5fc6a957fb8826d472acd9e11274bca2c6ae6671a5` e extras `d9dd88b9f9a1163f0f3463642af6230e3fe9dc0b237c9713230b1add38faf42b`. O OpenTV usa os URLs públicos; esses arquivos locais servem como cópia de recuperação.
 - Dois candidatos novos foram descartados por HTTP 404: BabyFirst Brazil e Pluto TV Karaoke por Stingray.
 
 ## Origem e validação
